@@ -1,0 +1,8 @@
+We've had to reject your HIT submission for the following reason(s):
+
+Part 1:
+- [ ] Failed attention check at start (Did not move the slider to "Completely Agree")
+- [ ] Browsing headlines unrealistically fast (You could not read 15 headlines in < 5s)
+
+Part 2:
+- [ ] Not turning over the free card on numerous (>15) occasions. (This gives you free information and there is no reason not to do so)

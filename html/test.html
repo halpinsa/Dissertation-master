@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="./jspsych-5.0.3/jspsych.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-text.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-single-stim.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-call-function.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDquestion.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDnews.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDbias-rating.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDsurvey.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDrandom-code.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-JMMcardgame.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDinstructions.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDseparator.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-JMMinstructions.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./jspsych-5.0.3/css/jspsych.css"></link>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/flick/jquery-ui.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+      <div id="jspsych-target"></div>
+  </body>
+  <script>
+
+    /* FUNCTIONS */
+    var incrementCurrentQuestion = function(){
+      currentQuestion++;
+    };
+
+    var getQuestion = function(){
+      return questions[currentQuestion];
+    };
+
+    var getCurrentQuestionID = function() {
+      return currentQuestion;
+    };
+
+    var getRandomCode = function() {
+        return randomCode;
+    };
+
+    var getResponseFavour = function () {
+      if (responseFavour >= 50){
+        return true;
+      }
+      return false;
+    };
+
+    /* POST data to server to store in DB */
+    /* VARIABLES */
+    var currentQuestion = 0;
+    var responseFavour;
+    var timeline = [];
+    var randomCode = stringGen(8);
+
+
+
+    /* BLOCKS */
+
+
+    var test_block = {
+      type: 'AJDquestion',
+      labels: ['Completely Disagree', 'Neither Agree nor Disagree',
+              'Completely Agree'],
+      timing_first_stim: -1,
+      question: getCurrentQuestionID,
+      on_finish: function (data){
+        responseFavour = data.statementResponse;
+      }
+    };
+
+    var incrementBlock = {
+        type: 'call-function',
+        func: incrementCurrentQuestion
+    };
+
+
+    /* start the experiment */
+    jsPsych.init({
+      display_element: $('#jspsych-target'),
+      timeline: [test_block, incrementBlock],
+      on_finish: function() {
+        //saveData(jsPsych.data.dataAsJSON(), randomCode);
+        //jsPsych.data.displayData();
+      }
+    });
+  </script>
+  </html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="./jspsych-5.0.3/jspsych.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-survey-likert.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-text.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-single-stim.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-call-function.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDquestion.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDnews.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDbias-rating.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDsurvey.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDrandom-code.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDinstructions.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDseparator.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./jspsych-5.0.3/css/jspsych.css"></link>
+  </head>
+  <body>
+    <div id="jspsych-target"></div>
+  </body>
+  <script>
+
+  // defining groups of questions that will go together.
+  var Likert_questions = ["Hope", "Fear","Anger","Joy"];
+  var state_questions=["How confident do you feel in the strength of your belief?",
+  "How much prior knowledge do you have on the topic of the previous statement?",
+  "To what extent does this topic make you feel emotional?",
+  "To what extent do you identify with the topic in the previous statement?"];
+  var quant_scale=["None","A little","A moderate amount", "Quite a lot","Very much"];
+  // defining two different response scales that can be used.
+  var scale_1 = ["Not at all", "Slightly", "Moderately", "Very Much", "Completely"];
+
+  var likert_block_1 = {
+      type: 'survey-likert',
+      questions: state_questions,
+      labels: [scale_1,quant_scale,scale_1,scale_1],
+  };
+
+  var likert_block_2 = {
+      type: 'survey-likert',
+      questions: Likert_questions,
+      labels: [scale_1, scale_1, scale_1, scale_1],
+      preamble: "How strongly do you associate following emotions with the topic in the previous statement?" // need one scale for every question on a page
+  };
+
+  jsPsych.init({
+    display_element: $('#jspsych-target'),
+    timeline: [likert_block_1, likert_block_2],
+    on_finish: function() { jsPsych.data.displayData(); }
+  });
+
+
+  </script>
+</html>

@@ -1,0 +1,787 @@
+{
+    "0": {
+        "against": [
+            "This is a headline. Click the button on the left to see more from this news source.",
+            "The button on the left shows you more headlines from this news source.",
+            "You are free to browse the headlines.",
+            "You can browse the headlines in any order.",
+            "When the slider is full you won't be able to browse any more headlines."
+
+        ],
+        "for": [
+            "This is a headline. Click the button on the left to see more from this news source.",
+            "The button on the left shows you more headlines from this news source.",
+            "The slider at the bottom shows how many headlines you've viewed.",
+            "Once the slider is complete, you can continue."
+        ],
+        "question": "Let's practice. This is where the statements will be. Try moving the slider to 'Completely Agree', and then click Submit Answer."
+    },
+
+    "1": {
+        "against": [ 
+            "HPV vaccine has led to 'significant drop' in cervical cancer rates among UK women, study reveals",
+            "Increase in Global Cancer Incidence, Drop in Death Rates",
+            "Facial recognition start-up Yitu teams up with Chinese hospital to reduce cancer mortality rate using big data",
+            "Cancer’s death rate falls for US men, women and children",
+            "Cancer Deaths Have Dropped 26% in Recent Years",
+            "Decline in colorectal cancer deaths is a 'major success' story; seven per cent fall in death rates since 2012",
+            "Nearly 40% of Cancer Deaths Are Preventable With Lifestyle Changes, Says Study",
+            "Cancer survival rates for children continue to rise",
+            "Four-Drug Chemo Combo Significantly Improves Pancreatic Cancer Survival",
+            "Breast cancer death rate down 10% in just five years",
+            "Simon Stevens: The NHS should expect big improvements in cancer treatment",
+            "Ovarian Cancer Incidence, Mortality Decline But Access to Care Is Not Equal",
+            "New screening guidelines for colorectal cancer aim to reduce mortality and morbidity",
+            "High-Quality Diet May Decrease Mortality Risk in Cancer Survivors",
+            "Annual Report to the Nation: overall cancer mortality continues to decline, prostate cancer mortality has stabilized",
+            "Artificial intelligence could improve breast cancer screenings",
+            "Existing treatment could be used for 'untreatable' form of lung cancer"
+
+
+
+
+        ],
+        "for": [
+            "Surgeons call for more research, education as lung cancer rates in women rise",
+            "Cancer rates among over‑75s set to rocket",
+            "Liver cancer death rate in US surged 43% in 16 years",
+            "Cancer Research Increases As Incidence And Death Rates Rise",
+            "Taiwan cancer deaths soar to record 48,000 in 2017",
+            "According to skeletal records from Ancient Egypt, our cancer rates are getting worse",
+            "Cancer Deaths Climb 15% in Venezuela, Group Says",
+            "Liver cancer rates in Australia reach shocking level",
+            "Global cancer cases rise by a third in a decade as life expectancy and unhealthy habits increase, finds major study",
+            "Welsh beaches and surf culture 'fuel skin cancer rise'",
+            "Why Pancreatic Cancer Is on the Rise: Pancreatic cancer will soon be the second-biggest cause of cancer deaths",
+            "Cases of cancer in elderly to surge by 2035, report says",
+            "Cancer research ‘critical’ as incidence set to rise 90% in 25 years",
+            "Rise in cancers 'caused by weight'",
+            "Ovarian cancer diagnoses 'will rise 55% in the next 20 years'",
+            "Why are deaths from prostate cancer on the rise?",
+            "Rise in cancer cases for those aged 16-65 years old, report claims",
+            "Ready meals and cereals linked with rise in cancer"
+            
+        ],
+        "question": "The risk of dying from cancer will increase in the next 50 years."
+    },
+
+    "2": {
+        "against": ["Geoengineer polar glaciers to slow sea-level rise",
+            "Sunday Conversation: Engineer Holly Kremers looks to build resilience against sea-level rise",
+            "Rotterdam has learned to cope with rising seas. Here’s how.",
+            "This beach project could be model to combat flooding woes",
+            "Reducing carbon emissions will limit sea level rise",
+            "Increasing snowfall in Antarctica could reduce sea level rise, but only a bit",
+            "Rising sea levels - How to stop a sea from sinking",
+            "New model for gauging ice sheet movement may improve sea-level-rise predictions",
+            "N.S. teams with environmentalists, public, to protect coastline from rising sea levels",
+            "This floating ‘utopia’ will have its own government and cryptocurrency by 2022 – to beat rising sea levels",
+            "Towards a climate agreement: will Dutch polder model succeed?",
+            "Sea rise is outpacing Everglades restoration. But scientists say there’s a solution",
+            "Michael Wolovick ’09 Proposes ‘Radical’ Solution to Curb Sea-level Rise",
+            "Map: How to fix nine Bay Area spots in danger of sea-level rise",
+            "Thaw of Antarctic ice lifts up land, might slow sea level rise",
+            "Replenishing Delaware's beaches in the face of ongoing erosion, sea level rise",
+            "Various solutions to sea level rise in Vietnam"
+            
+            
+            
+            
+
+        ],
+        "for": [
+            "Sea Level Rise Will Threaten Thousands of California Homes",
+            "Rising seas: 'Florida is about to be wiped off the map'",
+            "Flooding from sea level rise threatens over 300,000 US coastal homes – study",
+            "Global sea level to rise by up to 1.2 metres despite Paris agreement, say scientists",
+            "Erosion From Rising Sea Levels Is Destroying the English Town of Happisburgh",
+            "As sea level rises, Jersey shore homes in trouble",
+            "The property value of your coastal home may drop significantly as rising seas inch closer",
+            "Rising sea levels could cost the world $14 trillion a year by 2100",
+            "Rising sea level a 'serious issue' for southern Sweden",
+            "Graphics of Marshall Islands sea level rise ‘brought EU ministers to tears’",
+            "Coral reef growth ‘already failing to keep pace with sea level rise’, study says",
+            "Nobody has that much money': One sinking city's fight against rising sea levels",
+            "How Many Homes Are at Risk from Sea Level Rise? New Interactive Map Has the Answers",
+            "The Fate of My Grandmother’s Home: Facing Sea Level Rise in New Jersey",
+            "Pilot House Waterfront History Exhibit Serves as a Warning for Sea Level Rise",
+            "Caribbean reefs too weak to survive sea-level rise",
+            "New Report Exposes Possible Effects of Rising Sea Level on Real Estate"
+
+        ],
+        "question": "Many homes are at risk of being lost to rising sea levels."
+    },
+
+    "3": {
+        "against": [
+            "Report For Defense Department Ranks Top Threats From 'Synthetic Biology'",
+            "DIY horsepox created from mail-order DNA prompts search for new gene editing rules at U of A",
+            "Genome editing: Are we opening a back door to eugenics?",
+            "In Egypt, Genetic Crop Modification Is On Hold",
+            "Genetically Engineering the Natural World, it Turns Out, Could Be a Disaster ",
+            "The Next Revolution of Sports Cheating: Rewriting Athletes’ Genetic Codes",
+            "Should the FDA Ban People From Genetically Engineering Themselves?",
+            "DARPA Wants to Use Genetic Modification to Turn Plants into Spy Tech",
+            "Scientist wants controversial genetic modification used to virtually wipe non native wasps from New Zealand",
+            "From Gene-Editing Cures to Bioweapon Nightmare",
+            "Jurassic World' paleontologist: We're 5 years away from genetically engineering dinosaurs",
+            "Genome-editing tool could increase cancer risk",
+            "40% of US consumers avoid GMO foods at grocery store, survey finds",
+            "Designer Babies and Genetic Modification: Inequality on a Biological Scale",
+            "U-M prof leads report detailing dangers of synthetic biology",
+            "This gene-editing tech might be too dangerous to unleash",
+            "3 Good Reasons to (Mostly) Ignore Claims That GMOs Aren’t Dangerous",
+            "Biosecurity risks involved with genetic engineering"
+
+
+
+        ],
+        "for": [
+            "With yield boost over organics of 33 percent, genetic engineering offers developing world chance at food security",
+            "Gene Editing Could Cut the Cost of One of the Most Expensive Animal Diseases in the World",
+            "Revolutionary Gene-Editing Treatment Cures Genetic Condition In Utero",
+            "Gene editing cures blood disorder in fetal mice",
+            "Pioneering gene therapy found to reverse type 2 diabetes in mice",
+            "The sizeable benefits of genetic modification",
+            "Here's why organic farming needs GMOs",
+            "Researchers Discover Genes That Make Plants Drought-Resistant",
+            "How GMO crops can help Nigeria achieve food security",
+            "Who is afraid of GMOs? Fear peddlers",
+            "Gene therapy, biotechnology can tackle deforestation and air pollution",
+            "This startup wants to save the banana by editing its genes",
+            "Gene editing successfully lowers monkey cholesterol levels",
+            "Gene editing via nanoparticles may treat autism syndromes",
+            "Gene editing technology predicts heart disease risk",
+            "Gene editing approach aims for broad disease resistance in staple food crops",
+            "GlobalData highlights value of using new cell and gene editing tech",
+            "Gene editing could provide humane alternative to painful cattle dehorning"
+
+        ],
+        "question": "Genetic engineering is an exciting breakthrough which will save and improve lives"
+    },
+
+    "4": {
+        "against": [
+            "How Bee Saving Paper May Give Bumbling Insects a Fighting Chance",
+            "‘Extinct’ bee reappears on Danish island for first time in 80 years",
+            "David Attenborough's cute sugar gesture will help save bees",
+            "Newtown Cafe's will do their bit to help Bees survival",
+            "Smart Bees Startup Targets to Save the Tunisian Bees",
+            "Robo-Bees Can Infiltrate and Influence Insect Societies To Stop Them From Going Extinct",
+            "The Bee Apocalypse Was Never Real; Here's Why",
+            "Honeybee population isn't ‘crashing’ and seed pesticides are not driving health problems—and here’s why",
+            "How our very own bees got their buzz back",
+            "The bees are all right, for now - but it takes a lot of work",
+            "The Government Has a Plan to Prevent Bees From Going Extinct",
+            "Beehives on Winnipeg Rooftop Helping to Boost Declining Bee Population",
+            "Iowa’s Honey Bee Population Rebuilds",
+            "Bees have evolved to be city dwellers and prefer urban areas to countryside, study finds",
+            "Bumble Bees Are Bouncing Back in Numbers Say Experts",
+            "One answer to the bee crisis: Turn everyone into backyard breeders",
+            "With a Sniff and a Signal, These Dogs Hunt Down Threats to Bees"
+
+
+
+        ],
+        "for": [
+            "Scientists find evidence of 27 new viruses in bees",
+            "120,000 bees killed by 'mindless' vandals",
+            "Climate Change Could Drive Bees in Warmer Regions to Extinction",
+            "Embattled bees face yet another potential threat – virus-carrying hoverflies",
+            "The Bees Are Better, But They're Not All Right",
+            "Bumble Bee Species Declared Endangered in the U.S. for First Time",
+            "Native bees - small, solitary and under threat",
+            "Sting in the tale for future of bees",
+            "A third of all bee species in Ireland could be extinct by 2030",
+            "Wait and see' attitude to bee threat is not good enough",
+            "Save our bees or we’ll all be dead in four years",
+            "Where have all our insects gone?",
+            "The last honeybee refuge in the US is disappearing",
+            "Dying Bees Forces Beekeeper from Staying in Business",
+            "The Plight of the Humble Bee",
+            "Vernon beekeeper concerned after spike of deaths in bee population",
+            "Bee deaths linked to blend of chemicals"
+
+
+        ],
+        "question": "Many bee populations will be extinct within the next 20 years."
+    },
+
+    "5": {
+        "against": [
+            "Social media companies accused of 'radicalising and grooming' users with algorithms",
+            "More Social Media Time Raises Cyberbullying Risk",
+            "Good social media experiences DON'T outweigh the bad",
+            "Spending too much time on social media among the nation’s worst habits",
+            "Online Protests Erupt In Iran After Arrest Of Teenager For Social Media Posts",
+            "Sixteen-year-old Ethiopian runner is ridiculed by social media users who say she looks much older",
+            "The ‘migraine pose’ taking over Instagram getting backlash on social media",
+            "Employers using social media to screen job applicants",
+            "Man Dies After Shooting Over Social Media Dispute",
+            "Elon Musk's social media conduct may be bad for his business",
+            "Social media usage can make or break a chance to get hired",
+            "How social media (finally) killed irony",
+            "Timehop Breach Reveals Lessons for Social Media Hacks in a GDPR-Facing World",
+            "The ultimate proof that looking happy on social media often masks real pain",
+            "Young people being radicalised into violence by music videos and social media, former gang member warns",
+            "The social media mob is a danger to society",
+            "The dark side of ‘Plane Bae’ and turning strangers into social media content"
+
+
+
+        ],
+        "for": [
+            "Good News Beats Bad on Social Networks",
+            "It's Not All Bad: The Social Good Of Social Media",
+            "Spending time on Twitter, Instagram and Facebook can have positive mental health benefits",
+            "5 Ways Social Media Makes Good Things Happen",
+            "Is there a way to use social media for good? Scientists say yes",
+            "6 Ways Social Media Is GOOD for Your Health",
+            "#CharliesCooler Social Media Movement Turns Grief Into Purpose For New Jersey Woman",
+            "Florida students have turned social media into a weapon for good",
+            "Harnessing the Crowdsourcing Power of Social Media for Disaster Relief",
+            "Social Internet Sites as a Source of Public Health Information",
+            "Photographer Teams Up With Facebook to Bring Visibility to the LGBTQ Community",
+            "Twitter erupts as England reaches World Cup semifinal",
+            "Facebook will chip in for users' birthday fundraisers",
+            "Thousands participate in 'Positive Pakistan' photo competition on Twitter",
+            "Celebrate Social Media Day With 15 Super-Positive Instagram Accounts ",
+            "New study suggests social media might not be as awful for kids as you think",
+            "10 Instagrammers Who Will Make Your Life Better, According to Tess Holliday"
+
+
+        ],
+        "question": "Social media does more good than harm"
+    },
+
+    "6": {
+        "against": [
+            "It's 50 years since climate change was first seen. Now time is running out",
+            "Warning to Humanity: 15,000 scientists say damage irreversible",
+            "Species Extinction Rate Accelerated By 1,000 Times Due To Human Activity And Climate Change",
+            "Looming environmental disaster",
+            "Researchers say economic models are greatly understating potential impacts of climate change",
+            "Water, environmental crisis may worsen",
+            "Dangerous climate change is likely, concludes new research",
+            "Future global warming may be double than what current climate models predict",
+            "Their lives in our hands: inaction on global warming jeopardises our wellbeing",
+            "Huge change in energy investment needed to meet climate targets",
+            "Don’t make us pay for climate change, say big oil CEOs",
+            "Only ‘rapid and far-reaching’ changes will stop global warming exceeding 1.5C target by 2040, leaked UN report reveals",
+            "Trending Science: Could climate change be so much worse than we ever thought?",
+            "Barack Obama admits Paris Accord targets 'not enough to avoid catastrophe'",
+            "The UK is not on track to meet its carbon emissions targets for the next 15 years",
+            "Blame the weather: why Spain is failing to meet EU climate change targets",
+            "Climate change is biggest risk to World Heritage sites – former UNESCO chief"
+
+
+
+        ],
+        "for": [
+            "Conrad Black: Thirty years of climate hysterics being proven wrong over and over again",
+            "View from the Academy: Engineering to mitigate climate change",
+            "How bison will save us from climate change. The dream of Pleistocene Park",
+            "Sixty major NZ companies make climate change pledge",
+            "California beats its 2020 goals for cutting greenhouse gases",
+            "Cement Producers Are Developing a Plan to Reduce CO2 Emissions",
+            "Forests provide a critical short-term solution to climate change",
+            "EU should aim for net-zero emissions by 2040 to fight global warming",
+            "California climate pollutants fall below 1990 levels for first time",
+            "UK Government targets 70% low-emission car sales by 2030",
+            "Netherlands proposes 95% emissions cut by 2050 in draft climate law",
+            "Poll: One in five green businesses eye 100 per cent low carbon products and services by 2028",
+            "BAC May Become First Car Manufacturer to Be Climate Positive",
+            "Italy's Eni aims for oil industry first with carbon neutral goal",
+            "Welsh students create Arctic ice-rebuilding machines",
+            "Designing Climate-Change Solutions with Inspiration from Nature",
+            "Climate Change Resistant Corals Offer Hope",
+            "Climate Change Can Be Stopped by Turning Air Into Gasoline"
+
+
+        ],
+        "question": "People can and will reverse the effects of climate change."
+    },
+
+    "7": {
+        "against": [
+            "Think Positive, Climb Out of Poverty? It Just Might Work",
+            "Elite Colleges Are More Affordable for Lower and Middle-Class Students, Says Ameritech Financial",
+            "Ambitious transport improvements 'will help social mobility' over next 20 years",
+            "How this 19-year-old World Cup star went from a rough neighborhood to making $1.7 million a month",
+            "A decade of Bar Council social mobility initiative sees 730 students get a taste of the Bar",
+            "New project aims to improve teenagers’ life chances",
+            "Author who studies millionaires: Here are 3 proven ways to get rich",
+            "Here's how kids can get rich and successful this summer - according to the UK's youngest CEO",
+            "11 habits to start in your 20s if you want to be a millionaire",
+            "Staying Rich Is Harder than Getting Rich",
+            "How to get rich WITHOUT any qualifications: Millionaire reveals top tips for making money",
+            "How One Of America's Most Successful Self-Made Women Is Revolutionizing Natural Skincare",
+            "There's Good News For Self-Taught Programmers When It Comes To Job Performance",
+            "Mothers who rose from working-class roots reveal their very complex emotions about their children riding horses and going to private school",
+            "Are you working class, with no savings? You’re more likely to start a business",
+            "From rags to riches – how England stars went from living in council houses to buying million pound mansions with pools, lakes and cinemas",
+            "Innovator goes from rags to riches in a decade"
+
+
+
+        ],
+        "for": [
+            "Why the rich stay rich and the poor stay poor",
+            "Born poor, stay poor: the scandal of social immobility",
+            "Schools with more poor students less likely to have qualified staff",
+            "Children in north 'face double whammy' of poverty and bad schools",
+            "We have comprehensively failed white working class kids – no wonder they lack aspiration ",
+            "‘Working-class children get less of everything in education - including respect’",
+            "Health and social care inequality 'holding back integration'",
+            "Social mobility in richest countries 'has stalled since 1990s'",
+            "Half of workers think Britain has a 'class ceiling'",
+            "City ‘lagging’ behind on hiring people from poorer backgrounds",
+            "Why does theatre leave working-class actors in the wings?",
+            "Robots Are Poised to Make Life Grim for the Working Class",
+            "Poverty in Japan: Underclass struggles to achieve upward mobility",
+            "Minimum wage hikes a poor way of lifting people out of poverty",
+            "Children in need of rescue: Trapped by poverty",
+            "Mexico: children toil in tobacco fields as reforms fail to fix poverty",
+            "University costs working-class students more, says NUS report",
+            "Economists have identified a link between genetics and wealth inequality",
+            "Kylie Jenner Is 'Self-Made' And Other Myths We Tell About The Extremely Wealthy",
+            "As millennials, especially Latinos and Blacks, own fewer homes, wealth gap will grow"
+
+
+        ],
+        "question": "There is little hope of change for those born into poverty."
+    },
+
+    "8": {
+        "against": [
+            "Britain 'will strengthen response to hurricanes in Caribbean'",
+            "Your broadband cables can be used to detect earthquakes",
+            "Mexico City better prepared for earthquakes than in 1985",
+            "We really need a good plan for when a supervolcano erupts",
+            "May recognized as volcano preparedness month",
+            "Tourism industry in Americas, Caribbean prepares against tsunami risk",
+            "Coastal communities at risk of tsunamis consider the merits of evacuating up",
+            "Natural disasters: workshop spreads awareness about safety protocol",
+            "Asian growth battles natural disasters",
+            "Russian Built Rooppur NPP is Safe Against Natural Disasters - Nuclear Experts",
+            "CARIMAC Contracted to Develop New Online Course on Preparing for Natural Disasters",
+            "Munich Re Figures Show Fewer Severe Natural Disasters in the First Half of the Year",
+            "How AI could prevent natural disasters",
+            "Sudan, African Risk Capacity Sign MoU to Tackle Natural Disasters",
+            "Powerful computers to help in weather, natural disaster predictions ",
+            "FAI welcomes UEFA support in Natural Disaster Grants",
+            "Keeping residents safe with disaster preparedness plans",
+            "New App Helps People Stay Safe During Natural Disasters",
+            "Oil, gas industry ready for hurricane season"
+
+
+
+        ],
+        "for": [
+            "It’s Natural Disaster Season. Can Your Government Afford It?",
+            "What We Don't Know About State Spending on Natural Disasters Could Cost Us",
+            "The New Netflix Movie 'How It Ends' Features Societal Collapse By Geological Apocalypse",
+            "Fires, floods, hurricanes: Disaster experts weigh ‘new normal’",
+            "Why people choose to stay in areas vulnerable to natural disasters",
+            "Interview: Climate-related natural disasters threaten livelihoods of Mongolian nomadic herders: UN official",
+            "More than 18 mn displaced by natural disasters in 2017",
+            "People in these 16 states are woefully unprepared for the next natural disaster",
+            "FEMA Report Acknowledges Failures In Puerto Rico Disaster Response",
+            "WEATHER WARNING: Global warming means hurricanes will soon reach CATEGORY SIX",
+            "This year’s global hurricane boom could go into overdrive",
+            "Ready or not, Puerto Ricans rush to prepare as storm nears Caribbean",
+            "Survey: Floridians Still Not Adequately Prepared for Hurricane Season",
+            "Flash flood, dust storm threats to continue as North America monsoon carries on",
+            "Yellowstone volcano: What is Yellowstone Caldera? Do scientists know when it could ERUPT?",
+            "Mental bias leaves us unprepared for disaster",
+            "Soon every weather event could become a state of emergency"
+
+
+        ],
+        "question": "We are not prepared for catastrophic natural disasters in the future."
+    },
+
+    "9": {
+        "against": [
+            "Most consumers are happy to share data, but only if the benefits are clear",
+            "The FDA is looking to develop a $100mn medical data enterprise",
+            "Alexa alternatives have a secret weapon: Privacy",
+            "Pop-up cams could be the next must-have feature for phone privacy nuts",
+            "California unanimously passes historic privacy bill",
+            "Worried About Your Data Privacy? Blockchain Could Help",
+            "Scottish public sector saves £19m in fraud and waste by sharing data",
+            "Data analytics to play key role in fighting fraud",
+            "Brexit White Paper unveils plans to strengthen cyber security ties with the EU",
+            "The stock market is rewarding tech companies that protect data more than ones that exploit it",
+            "Consent above everything in new data sharing norms ",
+            "Good news! The privacy wins keep coming",
+            "Edelman and EDB want to unlock companies’ ability to use data for good",
+            "Researchers are using Facebook data to study gender inequality",
+            "Let’s make private data into a public good",
+            "Could Open Data Help Solve World Hunger?",
+            "How a startup is using the blockchain to protect your privacy"
+
+
+
+        ],
+        "for": [
+            "Over 150,000 People Tell Amazon: Stop Selling Facial Recognition Tech to Police",
+            "How Smart TVs in Millions of U.S. Homes Track More Than What’s On Tonight",
+            "Indian startups still don't take data privacy seriously",
+            "The Privacy Conundrum: What Will You Give Up To Protect Your Identity?",
+            "Data breaches are on the rise, but that won't force companies to up cyber security",
+            "Facebook's fine for data breaches won't reduce the web's appetite for our personal information",
+            "Facebook wants to own your face. Here’s why that’s a privacy disaster",
+            "As facial recognition technology becomes pervasive, Microsoft (yes, Microsoft) issues a call for regulation",
+            "Compensation sought for Australians caught up in Facebook privacy breach",
+            "UN privacy chief brands South Wales Police facial technology as 'chilling'",
+            "Dems push FTC to investigate smart TVs over privacy concerns",
+            "Why privacy should be your number one online concern",
+            "Facebook reveals it gave 61 companies access to widely blocked user data",
+            "Data is a fingerprint': why you aren't as anonymous as you think online",
+            "Walmart's Newly Patented Technology For Eavesdropping On Workers Presents Privacy Concerns",
+            "California malls are sharing license plate data with Ice-linked surveillance firm",
+            "China's terrifying surveillance state looks a lot like America's future"
+
+
+        ],
+        "question": "Collection of data endangers citizens’ rights to privacy and security."
+    },
+
+    "10": {
+        "against": [
+            "Why Thinking Positively Isn't Enough When You Have a Mental Illness",
+            "The 'Tyranny' of Positive Thinking Can Threaten Your Health and Happiness",
+            "You’re Never ‘Cured’ of an Eating Disorder",
+            "Can Schizophrenia Be Cured Naturally Without Medication? Not Completely.",
+            "Sharp rise in under-19s being treated by NHS mental health services",
+            "Without investment, student mental health will only get worse",
+            "Leading doctor warns over long waits for mental health therapy in Leeds",
+            "At last! Hull's new £7.8m mental health unit for young people in Hull gets go ahead",
+            "Increasing access to psychological treatments for mental illness",
+            "Get Help' Doesn't Cut It—How to Actually Help a Friend Dealing With Mental Illness",
+            "Why well-meaning mental health awareness campaigns should stop",
+            "Mental health: 'If I wasn't sectioned I'd be dead'",
+            "Self-Care Alone Is Not A Cure For Mental Illness",
+            "Does Breathing Help Anxiety? In The Short Term, Yes, But It’s Not A Cure",
+            "Workshop to cure mental illness through Yoga opposed",
+            "We still fail to understand that some people are more prone to mental illness",
+            "Depressed? Do yoga, travel, eat fruits, says health ministry; Twitter, mental health experts slam 'tone-deaf' advice on depression"
+
+
+
+        ],
+        "for": [
+            "Positive Thoughts May Help Treat Depression",
+            " How a healthy lifestyle can help mental wellbeing",
+            "Women who wake up early 'less likely to get depressed'",
+            "NL Leisure extend Get Active programme to those with mental health problems",
+            "Why Eating Plant-Based Can Boost Your Mental Health",
+            "People with strong faith have better mental health",
+            "Lifestyle: 5 Interesting Reasons Why Travel Is Good For Your Mental Health",
+            "Watching England at the World Cup is good for your mental health",
+            "‘The Power of Positive Thinking’ — how a positive attitude can do wonders",
+            "If Meditation Is Not Your Thing, Try a Walk in the Woods",
+            "Water is the best cure for mental health struggles, as I've found out",
+            "Why nutritional psychiatry is the future of mental health treatment",
+            "The Diet That Might Cure Depression",
+            "Could running be the 'miracle cure' to Britain's mental health problem?",
+            "Can exercise cure clinical depression? My story suggests it can",
+            "Eating vegetables, fruit and whole grains may combat depression, study suggests",
+            "How giving up sugar can help with anxiety, according to woman who tried it",
+            "Are gut bacteria to blame for anxiety, depression in obesity?",
+            "For Depression and Anxiety, Running Is a Unique Therapy"
+
+
+        ],
+        "question": "Many mental health problems can be cured with a positive attitude and healthy lifestyle."
+    },
+
+    "11": {
+        "against": [
+            "‘Access to Literacy’ Is Not a Constitutional Right, Judge in Detroit Rules",
+            "Race and education are what make U.S. income inequality even worse for some",
+            "Coalition education reforms ‘fuelled inequality in schools’",
+            "We condone an education system that guarantees future inequality",
+            "Not educating girls costs countries trillions of dollars: WB Report",
+            "Education: More a bulldozer than a great leveller",
+            "Educational inequality widening Australia’s rich-poor gap, report finds",
+            "New Federal Data Show America Still Needs to Improve College Access",
+            "Access to education in Germany still determined by family background",
+            "Access to higher education still a privilege in India",
+            "Attacks on schools deny access to education",
+            "Education not improving employment opportunities, government says",
+            "40,000 teens not in education, employment or training",
+            "A university diploma is no longer a source of pride in the Maghreb",
+            "Robert Halfon: Pay more for a degree that doesn’t get you into work",
+            "Low literacy levels among Indigenous children, young adults 'appalling', local elder and educator says",
+            "As financial burden rises, college students question value of education"
+
+            
+
+        ],
+        "for": [
+            "Can education help close the global gap between rich and poor?",
+            "Apple Partners with Malala Fund to Support Girls’ Education in Latin America",
+            "Can India become an AI hub for the developing world?",
+            "African development relies on education and literacy",
+            "For refugees in Kenya, an education in hope",
+            "World’s first development impact bond for education shows successful achievement of outcomes in its final year",
+            "300,000 Children Benefit from DFID Education Intervention",
+            "Education for all: Why is it important to educate a girl child?",
+            "How International Corporations Can Help Educate the World",
+            "Cambodia and World Bank Join Forces to Improve Higher Education and Connectivity",
+            "World leaders unite in $2bn drive to tackle 'global learning crisis'",
+            "Giving N.J. inmates state education aid will help them find jobs",
+            "UK aid provides Palestinian refugees with vital healthcare, education",
+            "Education in Nigeria: Overcoming Mass Displacement",
+            "It means everything': the university opening its doors to asylum seekers",
+            "Boosting Literacy One TV Set at a Time – If Only the State Spares the Funds",
+            "This 100-day literacy program transformed women in Telangana village into entrepreneurs"
+
+
+        ],
+        "question": "Equal access to education is a realistic way to improve lives worldwide"
+    },
+
+    "12": {
+        "against": [
+            "10-year-jail term for man who stabbed ‘noisy’ neighbour 65 times",
+            "Updates: Man dies and another seriously injured in 'neighbour' stabbing attack",
+            "Driver, who ran over man after homophobic abuse in Manchester’s Gay Village, is jailed",
+            "White woman with road rage launches racist rant at two black motorists",
+            "‘Evil Has Won’",
+            "Pensioner tricked into buying £15,000 watches by cruel con artists",
+            "Cruel couple 'fat shame' McDonald's customer by 'taking photos and laughing at her size'",
+            "Most Of The Victims Of Brazil's Rising Violence Are Young",
+            "Germans send anti-bullying experts into schools to stop anti-Semitism",
+            "Gang violence: children trapped in a lethal cycle of neglect",
+            "Over 36,000 children left to face risk of abuse and neglect",
+            "MPs facing increased abuse from online trolls",
+            "Heartless bystanders slammed for posing for selfies with car crash victims as they lay dying on ground and begging for help",
+            "The Vivid Dangers of Our Indifference to a Hellish World",
+            "Human indifference to struggle of others shows need for more love",
+            "A child's anguish meets America's indifference on new TIME cover",
+            "Star Wars actress Kelly Marie Tran deletes Instagram posts after abuse"
+
+        ],
+        "for": [
+            "This couple could have gone on a honeymoon. They transformed their neighborhood instead.",
+            "She wanted to collect 250 books for kids in need — and went way, way over her goal.",
+            "Scientists Probe Human Nature--and Discover We Are Good, After All",
+            "‘I was going to die, she brought me back’: Girlfriend Saves Life of Teen Struck by Lightning",
+            "This traffic cop has prevented over 200 people from jumping off the Golden Gate Bridge.",
+            "People are becoming organ donors in droves thanks to this heroic hockey player.",
+            "8-Year-Old Boy Stops Traffic To Help Elderly Woman Climb A Flight Of Stairs",
+            "9 Heartwarming Times Strangers Helped Struggling College Students",
+            "Waffle House Hero James Shaw Jr. Keeps On Helping",
+            "When Beach Wedding is Rained Out, Stranger Runs Up to Bride and Offers Up Her Home Instead",
+            "Celebrations Erupt After Dramatic Rescue of 12 Boys From Submerged Cave 2 Miles Deep",
+            "Train Passenger Uses a Twitter Post to Help Rescue 26 Girls From Traffickers",
+            "JetBlue Crew Praised for Saving Dog’s Life When It Was Struggling to Breathe on Plane",
+            "Three Young Men Become Heroes After Saving Blind Man Who Fell on Subway Tracks",
+            "Town’s Compassionate Approach Cuts Rates of Overdose by More Than Half – State to Adopt It",
+            "German 12-Year-old Boy Plants 1Million Trees, Takes Over UN Program to Plant a Trillion More",
+            "Instead Seeing Fireworks on Fourth of July, 200 People Spent Their Holiday Comforting Shelter Dogs"
+
+
+        ],
+        "question": "People above all want to help each other."
+    },
+
+    "13": {
+        "against": [
+            "Study shows tailored mental health services improve wellbeing of emerging adults",
+            "PTSD plummets for veterans who try horseback riding",
+            "Severe Mental Illness Found to Drop in Young, Defying Perceptions",
+            "Don't dismiss tech solutions to mental health problems",
+            "Mental health survey: Firms 'starting to break the stigma'",
+            "UK suicide rate shows largest drop for 20 years",
+            "No. of suicides in Japan in 2017 drops for 8th consecutive year",
+            "Raising awareness, suicide rates drop",
+            "Suicides in Nunavut hit 10-year low but more needs to be done, says advocate",
+            "How murder and suicide figures plummeted in Australia after gun control laws were introduced",
+            "New technology helps to improve treatment for NHS patients with depression",
+            "Op-ed: Lower health care costs can combat rising suicide rates",
+            "Dutch cut overdose deaths by dispensing pure heroin",
+            "Opioid Prescriptions, Addiction Diagnoses Drop",
+            "Alternative pain therapies may reduce addiction risk",
+            "Suicide rates in Scotland have fallen, new figures show.",
+            "NHS will 'ramp up' children's mental health care to deal with social media fallout"
+
+
+
+        ],
+        "for": [
+            "Butler County’s increase in drug overdose deaths strains coroner’s office",
+            "Legislature threatens to pour gas on mental health fire",
+            "Schools reach 'crisis point' with sharp increase in students dealing with anxiety, depression",
+            "Is rising inequality responsible for greater stress, anxiety and mental illness?",
+            "More students than ever suffer mental ill health. We must change our toxic world",
+            "A mad world: capitalism and the rise of mental illness",
+            "Sharp rise' in student mental illness tests universities",
+            "The Alarming Rise in Teen Mental Illness",
+            "Experts concerned over rise of mental illness in children",
+            "Suicide rates increasing across the US",
+            "Alabama’s mistreatment of prisoners with mental illness has led to a dramatic increase in suicides",
+            "Diagnosed mental illness increasingly prevalent among Estonian teens",
+            "Stress absences increase prompts calls for more mental health funding",
+            "Alavida Warns of Suicide Rates on the Rise in Canada",
+            "Rise in symptoms of depression and anxiety during pregnancy",
+            "Three charts on: why rates of mental illness aren’t going down despite higher spending",
+            "Toronto medical official calls for decriminalizing drugs as opioid overdoses skyrocket in Canada"
+
+
+        ],
+        "question": "Worldwide, mental illness is becoming a bigger problem."
+    },
+
+
+    "14": {
+        "against": [
+            "Even Bernie Sanders knows single-payer is painful",
+            "Medicare for All Won’t Bring Medicare to All",
+            "No matter what you call it, government-run health care will never work",
+            "Pray for Alfie Evans: Victim of socialized medicine",
+            "Britain’s Socialized Healthcare System Is Overwhelmed",
+            "Socialized healthcare is a bad idea for Americans",
+            "A disturbing number of Americans want socialized healthcare",
+            "Why single payer health care is a terrible option",
+            "Why Does the Left Want Universal Health Care? Britain’s Is on Its Deathbed",
+            "The Ugly Realities Of Socialized Medicine Are Not Going Away",
+            "Socialized Medicine Is a Failure Everywhere It's Been Tried",
+            "Commentary: Socialized medicine seeks Charlie Gard’s death",
+            "The Pitfalls of Single-Payer Health Care: Canada’s Cautionary Tale",
+            "Why Socialized Health Care Is Unjust",
+            "The Hidden Benefits of Your Health Insurance Plan",
+            "The path to fixing health care starts with employers",
+            "10 Reasons Why The US Health Care System Is The Envy Of The World"
+
+
+
+        ],
+        "for": [
+            "What India can teach the U.S. about driving down the cost of health care",
+            "Happily married couple considers divorce to pay for daughter's health care costs",
+            "Cardiovascular disease leads to ‘catastrophic’ costs for 2M low-income US families each year",
+            "Insurers warn of rising premiums after Trump axes Obamacare payments again",
+            "Sky-high prices of everything make US healthcare the world's most expensive",
+            "Key drivers of high US healthcare spending identified",
+            "Americans spend more on health care, but have shorter lives",
+            "Medical debt can wipe you out",
+            "4 tips to keep medical debt from overwhelming you",
+            "Medical bills account for 1 in 3 GoFundMe campaigns",
+            "Teen who survived Detroit plane crash needs help with medical bills",
+            "The US Ranks Last in Health Care System Performance",
+            "Capitalist institution makes strong case for socialised medicine",
+            "Socialized Medicine Has Won the Health Care Debate",
+            "People are ditching US healthcare and flying to other countries for medical procedures they can actually afford",
+            "Even for the Insured, a Hospital Stay Has Surprising Costs",
+            "Op-ed: Lower health care costs can combat rising suicide rates",
+            "Single-Payer Health Care System Hard to Dismiss"
+
+
+        ],
+        "question": "U.S. citizens would benefit from a socialized healthcare system."
+    },
+
+    "15": {
+        "against": [
+            "This 4th of July Marks a Return of Class Struggle in the US",
+            "How the capitalist class is strangling the American economy",
+            "Workers need more training to succeed in “gig” economy. ",
+            "Bypassed by the economic boom, workers are pushing back",
+            "How Post-Recession Corporate Greed May Have Set Us Up For An Even Bigger Crash",
+            "Trade union slams Coca-Cola company for violating worker rights",
+            "B.C. government says don’t blame us, blame ‘gouging’ for higher gas prices",
+            "The Grenfell Tower tragedy might have been prevented if greedy corporations had listened 30 years ago",
+            "How ‘Sorry To Bother You’ Explores the Pitfalls of Capitalism",
+            "US Supreme Court Decision a Victory for Corporate Greed",
+            "After Math: Stage 4 capitalism",
+            "LETTER: Corporate greed hurts consumers",
+            "Capitalism Is Ruining Science",
+            "Corporate Greed Is Already Out Of Control In 2018",
+            "In the Middle Class, and Barely Getting By",
+            "Robots Will Make Life Grim for the Working Class",
+            "Capitalism’s Betrayal Of The Working Class Could Be Its Undoing"
+
+
+
+        ],
+        "for": [
+            "Voices: Free market solutions to climate change are possible",
+            "Marxism Without Progress",
+            "Corporate Tax Cuts Don’t Boost Incomes for Majority of Americans: Study",
+            "Democrats’ ‘socialism’ will bury us in debt we won’t be able to get out from under",
+            "Worried About Socialism Coming to America? Calm Down",
+            "Voters Overwhelmingly Prefer Free Market to Socialism",
+            "Let the free market rule",
+            "A Moral Case for Capitalism",
+            "Trump's trade critics are wrong -- His tariffs could bring major benefits to America",
+            "Is there a future for capitalism? It doesn’t have to become an uncontrollable monster",
+            "Economies can only thrive on open and free markets",
+            "Free market works",
+            "Theresa May defends free market capitalism after Jeremy Corbyn's criticism",
+            "Wall Street would benefit from lifting those left behind",
+            "Sorry Bernie Bros But Nordic Countries Are Not Socialist",
+            "Don’t be fooled – Karl Marx was a hate-filled totalitarian whose ideas killed millions"
+
+
+        ],
+        "question": "The capitalist economy will benefit workers of all classes. "
+    },
+
+
+    "16": {
+        "against": [
+            "What\u2019s the next big threat to US intelligence? Donald Trump",
+            "China voices economic fears about Donald Trump presidency", 
+            "Doomsday Clock closer to midnight in wake of Trump presidency",
+            "Donald Trump has ditched the world in favor of big oil's titans",
+            "Donald Trump acts like an authoritarian thug toward the press",
+            "Dollar falls to lowest level since Trump election", 
+            "Make no mistake: Donald Trump has fueled violence against journalists", 
+            "Donald Trump  considering 'brand new' immigration order", 
+            "Is business starting to get spooked about Donald Trump?", 
+            "Will Donald Trump destroy America?", 
+            "Donald Trump is undermining the fight against corruption", 
+            "Donald Trump and China on dangerous collision course, say experts", 
+            "Welcome to dystopia \u2013 George Orwell experts on Donald Trump", 
+            "Donald Trump risks damaging intelligence agencies, warns former CIA chief", 
+            "Donald Trump renews war with media as transition chaos continues", 
+            "Privacy experts fear Donald Trump running global surveillance network", 
+            "Donald Trump fails to endorse Nato\u2019s mutual defence pledge", 
+            "Donald Trump 'taking steps to abolish Environmental Protection Agency'", 
+            "\u2018Vote shaming\u2019 Trump supporters is fair. What they have done is shameful", 
+            "Trump criticises London mayor after terrorist attack"
+        ], 
+        "for": [
+            "Trump to Push for $1T for Roads, Bridges", 
+            "Trump voters eager to make America 'great'",
+            "Jeremy Corbyn says Donald Trump win is 'unmistakable rejection of establishment' ",
+            "US stocks turn positive after Trump win",
+            "Trump speech to Congress promises 'renewal of American spirit'",
+            "Michigan Voters Say Trump Could See Their Problems \u2018Right Off the Bat\u2019", 
+            "Steel Industry, Seeing a New Dawn, Is Cheering for Trump", 
+            "Donald Trump \u2013 miracle worker",
+            "Trump puts America first", 
+            "Donald Trump voters in Pennsylvania cheer in a new era",
+            "Good news for Trump from the heartlands of the Midwest", 
+            "Trump voters say US president is 'doing a fabulous job'",
+            "Nasdaq Hits 6,000 as Markets Rise on Tax Overhaul Optimism",
+            "Give Donald Trump credit: the Freedom Caucus really is terrible", 
+            "Donald Trump focuses fire on Iran's support for 'terrorists and militias'", 
+            "The liberal punditocracy thinks Donald Trump is toast. Not so fast", 
+            "Is Donald Trump the man to promote peace with North Korea?", 
+            "Trump executive order aims to protect US from \u2018catastrophic\u2019 cyber attack", 
+            "Donald Trump named as Time magazine's person of the year", 
+            "Donald Trump: 'We will stop racing to topple foreign regimes'", 
+            "Shinzo Abe says Japan can have confidence in Donald Trump", 
+            "Donald Trump, a restless soul who is a work in progress", 
+            "Donald Trump says decision to invade Iraq was a 'disaster'",  
+            "Don\u2019t Like Trump\u2019s Bluster? Sometimes It Works."
+        ], 
+
+        "question": "Donald Trump\u2019s presidency will benefit the average American"
+    }
+}

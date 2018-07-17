@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="./jspsych-5.0.3/jspsych.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-survey-likert.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-text.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-single-stim.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-call-function.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDquestion.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDnews.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDbias-rating.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDsurvey.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDrandom-code.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDinstructions.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDseparator.js"></script>
+    <link rel="stylesheet" href="./jspsych-5.0.3/css/jspsych.css"></link>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/flick/jquery-ui.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+      <div id="jspsych-target"></div>
+  </body>
+  <script>
+
+    /* FUNCTIONS */
+    /* POST data to server to store in DB */
+    function saveData(data, randomCode) {
+       $.post('../cgi/online_questions/submit.cgi', data + "\n" + randomCode)
+       .done(function(data){
+          console.log(data);
+       })
+       .success(function(){
+        console.log("success");
+       })
+       .fail(function(xhr, status, error){
+          console.log(xhr);
+          console.log(status);
+          console.log(error);
+          console.log(xhr.responseText)
+       });
+    };
+
+    /* Generate a random string for mturk */
+    function stringGen(len){
+      var text = " ";
+
+      var charset = "abcdefghijklmnopqrstuvwxyz0123456789";
+
+      for( var i=0; i < len; i++ )
+          text += charset.charAt(Math.floor(Math.random() * charset.length));
+
+      return text;
+    };
+
+    var incrementCurrentQuestion = function(){
+      currentQuestion++;
+    };
+
+    var getQuestion = function(){
+      return questions[currentQuestion];
+    };
+
+    var getCurrentQuestionID = function() {
+      return currentQuestion;
+    };
+
+    var getRandomCode = function() {
+        return randomCode;
+    };
+
+    var getResponseFavour = function () {
+      if (responseFavour >= 50){
+        return true;
+      }
+      return false;
+    };
+
+
+    /* VARIABLES */
+    var currentQuestion = 0;
+    var responseFavour;
+    var timeline = [];
+    var randomCode = stringGen(8);
+
+    /* BLOCKS */
+
+    var instruction_block_part1 = {
+      type: 'AJDinstructions',
+      part: 1,
+      show_clickable_nav: true
+    };
+
+    var instruction_block_part3 = {
+      type: 'AJDinstructions',
+      part: 3,
+      show_clickable_nav: true
+    };
+
+    /* Define SPQ block */
+    var SPQ_B_block = {
+      type: 'AJDsurvey',
+      questions:
+      ['Have you ever had the sense that some person or force is around you, even though you cannot see anyone?',
+      'Are you sometimes sure that other people can tell what you are thinking?',
+      'Have you ever noticed a common event or object that seemed to be a special sign for you?',
+      'Do you often pick up hidden threats or put-downs from what people say or do?',
+      'When shopping do you get the feeling that other people are taking notice of you?',
+      'Have you had experiences with astrology, seeing the future, UFOs, extra-sensory perception, or a sixth sense?',
+      'Do you ever suddenly feel distracted by distant sounds that you are not normally aware of?',
+      'Do you often have to keep an eye out to stop people from taking advantage of you?',
+      'People sometimes find me aloof and distant.',
+      'I feel I have to be on my guard even with friends.',
+      'I feel very uncomfortable in social situations involving unfamiliar people.',
+      'Have you found that it is best not to let other people know too much about you?',
+      'I tend to keep in the background on social occasions.',
+      'Do you feel that you are unable to get "close" to people?',
+      'I feel very uneasy talking to people I do not know well.',
+      'I tend to keep my feelings to myself.',
+      'People sometimes comment on my unusual mannerisms and habits.',
+      'Some people think that I am a very bizarre person.',
+      'Some people find me a bit vague and elusive during a conversation.',
+      'I sometimes use words in unusual ways.',
+      'I am an odd, unusual person.',
+      'I find it hard to communicate clearly what I want to say to people.'
+      ],
+      options: [["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"],["Yes", "No"]],
+      horizontal: true,
+      preamble: "Please complete the questions below"
+    };
+
+    var PHQ_block =  {
+        type: 'AJDsurvey',
+        questions: ['Little interest or pleasure in doing things',
+            'Feeling down, depressed, or hopeless',
+            'Trouble falling or staying asleep, or sleeping too much',
+            'Feeling tired or having little energy',
+            'Poor appetite or overeating',
+            'Feeling bad about yourself - or that you are a failure or have let yourself or your family down',
+            'Trouble concentrating on things, such as reading the newspaper or watching television',
+            'Moved or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you been moving around a lot more than usual',
+            'Thoughts that you would be better off dead or hurting yourself in some way',
+            'If you had any of these problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?'
+            ],
+        options: [
+            ['Not at all','Several days', 'More than half the days', 'Nearly every day'],
+            ['Not at all','Several days', 'More than half the days', 'Nearly every day'],
+            ['Not at all','Several days', 'More than half the days', 'Nearly every day'],
+            ['Not at all','Several days', 'More than half the days', 'Nearly every day'],
+            ['Not at all','Several days', 'More than half the days', 'Nearly every day'],
+            ['Not at all','Several days', 'More than half the days', 'Nearly every day'],
+            ['Not at all','Several days', 'More than half the days', 'Nearly every day'],
+            ['Not at all','Several days', 'More than half the days', 'Nearly every day'],
+            ['Not at all','Several days', 'More than half the days', 'Nearly every day'],
+            ['Not difficult at all', 'Somewhat difficult', 'Very difficult', 'Extremely difficult']
+        ],
+        horizontal: true,
+        preamble: 'Over the last 2 weeks, how often have you been bothered by any of the following problems?'
+    };
+
+    var Altman_block = {
+        type: 'AJDsurvey',
+        questions : ['Positive Mood', 'Self-Confidence', 'Sleep Patterns', 'Speech', 'Activity Level'],
+        options : [['I do not feel happier or more cheerful than usual.', 'I occasionally feel happier or more cheerful than usual.', 'I often feel happier or more cheerful than usual.', 'I feel happier or more cheerful than usual most of the time.', 'I feel happier or more cheerful than usual all of the time.'],
+                   ['I do not feel more self-confident than usual.', 'I occasionally feel more self-confident than usual.', 'I often feel more self-confident than usual.',  'I feel more self-confident than usual.', 'I feel extremely self-confident all of the time.'],
+                   ['I do not need less sleep than usual.', 'I occasionally need less sleep than usual.', 'I often need less sleep than usual.', 'I frequently need less sleep than usual.', 'I can go all day and night without any sleep and still not feel tired.'],
+                   ['I do not talk more than usual.', 'I occasionally talk more than usual.', 'I often talk more than usual.', 'I frequently talk more than usual.', 'I talk constantly and cannot be interrupted.'],
+                   ['I have not been more active (either socially, sexually, at work, home or school) than usual.', 'I have occasionally been more active than/ usual.', 'I have often been more active than usual.', 'I have frequently been more active than usual.', 'I am constantly active or on the go all the time.']],
+        horizontal: true,
+        preamble: 'Please choose the statement in each group that best describes the way you have been feeling for the <b>past week</b>. Please note that for the purposes of this questionnaire: "occasionally" means once or twice; "often" means several times or more and "frequently" means most of the time.'
+    };
+
+    var lotr_opts = ["I agree a lot", "I agree a little","I neither agree nor disagree","I disagree a little","I disagree a lot"];
+      var lotr_opts_arr = [];
+      lotr_index = 0;
+
+    while (lotr_index!=10){
+      lotr_opts_arr.push(lotr_opts);
+      lotr_index+=1;
+    }
+
+    var LOTR_block =  {
+      type: 'AJDsurvey',
+      questions: ["In uncertain times, I usually expect the best.","It's easy for me to relax.","If something can go wrong for me, it will.","I'm always optimistic about my future.","I enjoy my friends a lot.","It's important for me to keep busy.","I hardly ever expect things to go my way.","I don't get upset too easily.","I rarely count on good things happening to me.","Overall, I expect more good things to happen to me than bad."],
+      options: lotr_opts_arr,
+      horizontal: true,
+      preamble: 'Please complete the questions below'
+    };
+
+var i 
+var panas_opts = [" Very Slightly or Not at All ", "A Little","Moderately", "Quite a bit","Extremely"]
+var panas_opt_arr=[]
+for (i=0; i<20; i++) {
+  panas_opt_arr.push(panas_opts)
+}
+
+    var PANAS_block = {
+      type: 'AJDsurvey',
+      questions: [ "Interested", "Distressed","Excited","Upset","Strong","Guilty", "Scared", "Hostile",
+      "Enthusiastic","Proud","Irritable","Alert","Ashamed","Inspired","Nervous","Determined","Attentive","Jittery",
+      "Active","Afraid"],
+      options: panas_opt_arr,
+      horizontal: true,
+      preamble: "Please indicate the extent you have felt this way over the past week"
+    };
+
+var gad_opts=["Not at all","Several Days", "More than half the days","Nearly every day"]
+var gad_opt_arr=[]
+for (i=0; i < 7; i++){
+gad_opt_arr.push(gad_opts)
+}
+    var GAD_block = {
+      type: 'AJDsurvey',
+      questions: ["Feeling nervous, anxious or on edge?","Not being able to stop or control worrying?",
+      "Worrying too much about different things?","Trouble relaxing?","Being so restless that it is hard to sit still?",
+      "Becoming easily annoyed or irritable?","Feeling afraid as if something awful might happen?"],
+      options: gad_opt_arr,
+      horizontal : true,
+      preamble: "Over the last 2 weeks, how often have you been bothered by any of the following problems?"
+    };
+    /* Define random code block */
+    var randomCode_block = {
+      type: "AJDrandom-code",
+      randomCode: getRandomCode
+    };
+
+    
+    /* define test block */
+    var test_block = {
+      type: 'AJDquestion',
+      labels: ['Completely Disagree', 'Neither Agree nor Disagree',
+              'Completely Agree'],
+      timing_first_stim: -1,
+      question: getCurrentQuestionID,
+      on_finish: function (data){
+        responseFavour = data.statementResponse;
+      }
+    };
+    
+    var Likert_questions = ["Hope", "Fear","Anger","Amusement"];
+    var state_questions=["How confident do you feel about the strength of your belief?",
+    "How much knowledge do you already have on the topic of the previous statement?",
+    "To what extent does this topic make you feel emotional?",
+    "To what extent is the topic in the previous statement relevant or important to you?"];
+
+    var quant_scale=["None","A little", "Quite a lot","Very much"];
+    var scale_1 = ["Not at all", "Slightly", "Moderately", "Very Much"];
+
+    var likert_block_1 = {
+        type: 'survey-likert',
+        questions: state_questions,
+        question: getCurrentQuestionID,
+        labels: [scale_1,quant_scale,scale_1,scale_1],
+    };
+
+    var likert_block_2 = {
+        type: 'survey-likert',
+        questions: Likert_questions,
+        labels: [scale_1, scale_1, scale_1, scale_1],
+        question: getCurrentQuestionID,
+        preamble: "How strongly do you associate following emotions with the topic in the statement above?"
+    };
+
+    var news_block = {
+      type: 'AJDnews',
+      currentQuestion: getCurrentQuestionID,
+      responseFavour: getResponseFavour,
+      showNews: true
+    };
+
+    var incrementBlock = {
+        type: 'call-function',
+        func: incrementCurrentQuestion
+    };
+
+    var biasBlock = {
+      type: 'AJDbias-rating',
+    };
+
+    var singleQuestionBlock = {
+      type: 'type',
+      text: 'some text',
+      timeline: [test_block, likert_block_1,likert_block_2, news_block, test_block, incrementBlock]
+    };
+
+    var testQuestionBlock = {
+      timeline: [test_block, incrementBlock]
+    };
+
+
+    var endOfPart1 = {
+      type: 'AJDseparator',
+      text: 'Part 1'
+    };
+
+    var endOfPart2 = {
+      type: 'AJDseparator',
+      text: 'Part 2'
+    };
+
+    var endOfPart3 = {
+      type: 'AJDseparator',
+      text: 'All parts'
+    };
+
+
+
+    /* TIMELINE */
+
+    timeline.push(instruction_block_part1);
+    
+    timeline.push(testQuestionBlock)
+    for (var i=0; i < 16; i++){
+      timeline.push(singleQuestionBlock);
+    }
+    timeline.push(endOfPart1);
+    timeline.push(instruction_block_part3);
+    timeline.push(GAD_block);
+    timeline.push(LOTR_block);
+    timeline.push(PANAS_block);
+    timeline.push(endOfPart3);
+    timeline.push(randomCode_block);
+
+    /* start the experiment */
+    jsPsych.init({
+      display_element: $('#jspsych-target'),
+      timeline: timeline,
+      on_finish: function() {
+        saveData(jsPsych.data.dataAsJSON(), randomCode);
+        // jsPsych.data.displayData();
+      }
+    });
+    </script>
+  </html>

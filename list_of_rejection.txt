@@ -1,0 +1,42 @@
+Failed both
+----------------------
+fobjbrsk (AJD: Failed browsing)
+fmw940ls (AJD: Failed browsing)
+vcfbqs8j (AJD: Failed Attention Check, Failed browsing)
+cpy5e5b4 (AJD: Failed browsing)
+kq29rdds (AJD: Failed browsing)
+0uu5eek3 (AJD: Failed browsing)
+cy55vnfk (AJD: Failed browsing)
+idi1ykrp (AJD: Failed browsing)
+
+
+Failed JMM
+----------------------
+mly6n2kh
+iwblihi62
+aivhxnna
+jzwudrym
+uvc4u79q
+nqgm88vr
+q2x4zj5a
+
+
+
+Failed AJD
+----------------------
+13cifytz (AJD: Failed browsing)
+kz0p9aij (AJD: Failed Attention Check, Failed browsing)
+lq1r782d (AJD: Failed browsing)
+
+
+
+
+
+REVERSE REJECTION
+---------------------
+6vqlupyd (AJD: Failed browsing)
+pko2fch2 (JMM)
+9rw2sk7b (JMM)
+9b9fbq81 (JMM)
+ob7k5lbr (AJD: Failed browsing)
+

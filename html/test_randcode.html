@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="./jspsych-5.0.3/jspsych.js"></script>
+    <script src="./game/scripts/phaser.js"></script>
+    <script src="./game/scripts/game_logic.js"></script>
+    <script src="./game/scripts/game_interface.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-text.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-single-stim.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-call-function.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDquestion.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDnews.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDbias-rating.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDsurvey.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDrandom-code.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-JMMcardgame.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDinstructions.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-AJDseparator.js"></script>
+    <script src="./jspsych-5.0.3/plugins/jspsych-JMMinstructions.js"></script>
+    <link href="./jspsych-5.0.3/css/jspsych.css" rel="stylesheet" type="text/css">
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/flick/jquery-ui.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  </body>
+  <script>
+
+    var timeline = [];
+
+    /* FUNCTIONS */
+
+    /* Generate a random string for mturk */
+    function stringGen(len){
+      var text = " ";
+
+      var charset = "abcdefghijklmnopqrstuvwxyz0123456789";
+
+      for( var i=0; i < len; i++ )
+          text += charset.charAt(Math.floor(Math.random() * charset.length));
+
+      return text;
+    };
+
+    var getRandomCode = function() {
+        return randomCode;
+    }
+
+
+    /* VARIABLES */
+    var randomCode = stringGen(8);
+
+    /* BLOCKS */
+    /* Define random code block */
+    var randomCode_block = {
+      type: "AJDrandom-code",
+      randomCode: getRandomCode
+    };
+
+
+
+    /* TIMELINE */
+    timeline.push(randomCode_block);
+    // timeline.push(purpose_block);
+
+    /* start the experiment */
+    jsPsych.init({
+      timeline: timeline,
+      on_finish: function() {
+        console.log("done");
+        //jsPsych.data.displayData();
+      }
+    });
+  </script>
+  </html>
