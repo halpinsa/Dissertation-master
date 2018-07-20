@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./jspsych-5.0.3/jspsych.js"></script>
     <script src="./jspsych-5.0.3/plugins/jspsych-survey-likert.js"></script>
     <script src="./jspsych-5.0.3/plugins/jspsych-text.js"></script>
@@ -17,12 +19,18 @@
     <script src="./jspsych-5.0.3/plugins/jspsych-AJDrandom-code.js"></script>
     <script src="./jspsych-5.0.3/plugins/jspsych-AJDinstructions.js"></script>
     <script src="./jspsych-5.0.3/plugins/jspsych-AJDseparator.js"></script>
+    <script> $( function() {
+      $( "#slider" ).slider();
+    } );
+    </script>
     <link rel="stylesheet" href="./jspsych-5.0.3/css/jspsych.css"></link>
     <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/flick/jquery-ui.min.css" rel="stylesheet" type="text/css">
   </head>
   <body>
       <div id="jspsych-target"></div>
   </body>
+
+  
   <script>
 
     /* FUNCTIONS */
@@ -239,7 +247,7 @@ gad_opt_arr.push(gad_opts)
       }
     };
     
-    var Likert_questions = ["Hope", "Fear","Anger","Amusement"];
+    var Likert_questions = ["Hope", "Fear"];
     var state_questions=["How confident do you feel about the strength of your belief?",
     "How much knowledge do you already have on the topic of the previous statement?",
     "To what extent does this topic make you feel emotional?",
@@ -258,7 +266,7 @@ gad_opt_arr.push(gad_opts)
     var likert_block_2 = {
         type: 'survey-likert',
         questions: Likert_questions,
-        labels: [scale_1, scale_1, scale_1, scale_1],
+        labels: [scale_1, scale_1],
         question: getCurrentQuestionID,
         preamble: "How strongly do you associate following emotions with the topic in the statement above?"
     };
@@ -308,9 +316,7 @@ gad_opt_arr.push(gad_opts)
 
 
     /* TIMELINE */
-
     timeline.push(instruction_block_part1);
-    
     timeline.push(testQuestionBlock)
     for (var i=0; i < 16; i++){
       timeline.push(singleQuestionBlock);
@@ -329,7 +335,7 @@ gad_opt_arr.push(gad_opts)
       timeline: timeline,
       on_finish: function() {
         saveData(jsPsych.data.dataAsJSON(), randomCode);
-        // jsPsych.data.displayData();
+        //jsPsych.data.displayData();
       }
     });
     </script>

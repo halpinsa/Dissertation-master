@@ -44,18 +44,32 @@ jsPsych.plugins['survey-likert'] = (function() {
 
     $('#jspsych-survey-likert-preamble').html(trial.preamble);
 
-    display_element.append('<form id="jspsych-survey-likert-form">');
+    
     // add likert scale questions
     for (var i = 0; i < trial.questions.length; i++) {
-      form_element = $('#jspsych-survey-likert-form');
+      display_element.append('<form id="jspsych-survey-slider-form">');
+      form_element = $('#jspsych-survey-slider-form');
       // add question
       form_element.append('<label class="jspsych-survey-likert-statement">' + trial.questions[i] + '</label>');
       // add options
       var width = 100 / trial.labels[i].length;
-      options_string = '<ul class="jspsych-survey-likert-opts" data-radio-group="Q' + i + '">';
+      form_element.append($('<div>', 
+      { "id" : 'slider'+i,
+        'class': 'slidecontainer'
+      }));
+
+      $('#slider'+i).append($('<input>', {
+        'type': "range",
+        'min' : "1",
+        'max':"100", 
+        'value':"50", 
+        'class':"slider", 
+        'id':"myRange"
+      }))
+      var options_string = '<ul class="jspsych-survey-likert-opts">';
       for (var j = 0; j < trial.labels[i].length; j++) {
               // modification1: I added "required"
-        options_string += '<li style="width:' + width + '%"><input type="radio" name="Q' + i + '" value="' + j + '" required><label class="jspsych-survey-likert-opt-label">' + trial.labels[i][j] + '</label></li>';
+        options_string +='<li display = "inline" style="width:' + width + '%">' + trial.labels[i][j] + '</li>';
       }
       options_string += '</ul>';
       form_element.append(options_string);
